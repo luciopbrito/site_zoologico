@@ -43,6 +43,11 @@ body {
   background-color: var(--color-verde-claro);
 }
 
+.no_visual__a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -76,13 +81,25 @@ main {
   padding: var(--back-off-padding);
 }
 
+.main-categoria__row1,
+.main-categoria__row2 {
+  display: flex;
+  justify-content: center;
+}
+
 .main__container {
   background-color: var(--color-bege);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20rem;
-  padding: 20rem 5rem;
+  padding: 10rem 5rem;
+}
+
+.main__categoria {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .carrosel {
@@ -225,6 +242,28 @@ main {
 .main-sobre__btn:hover,
 .main-comochegar__btn:hover {
   background-color: var(--btn-hover);
+}
+
+#main-categoria__aves,
+#main-categoria__repteis,
+#main-categoria__mamiferos {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+  transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-categoria__aves:hover,
+#main-categoria__repteis:hover,
+#main-categoria__mamiferos:hover {
+  transform: scale(1.1);
+}
+
+.main-cateria__title {
+  text-transform: capitalize;
 }
 
 .footer {

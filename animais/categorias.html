@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="./scripts/jquery/carrosel.js" defer></script>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../scripts/carrosel.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Site Guarulhos</title>
 </head>
@@ -15,74 +15,60 @@
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                <a href="#"><img src="./src/assets/logo.png" alt="logo do zoo. Zoo Zoológico-SP"></a>
+                <a href="../index.html"><img src="../src/assets/logo.png" alt="logo do zoo. Zoo Zoológico-SP"></a>
             </div>
             <nav class="header__nav">
                 <ul>
                     <li class="header-nav__link">
-                        <a href="#">home</a>
+                        <a href="../index.html">home</a>
                     </li>
                     <li class="header-nav__link">
-                        <a href="./sobre.html">sobre o zoo</a>
+                        <a href="../sobre.html">sobre o zoo</a>
                     </li>
                     <li class="header-nav__link">
-                        <a href="./animais/categorias.html">animais</a>
+                        <a href="#">animais</a>
                     </li>
                     <li class="header-nav__link">
-                        <a href="./como-cheagar.html">como chegar</a>
+                        <a href="../como-cheagar.html">como chegar</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="main">
-        <section class="carrosel">
-            <div class="carrosel__container">
-                <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-onca.jpg">
-                    <img src="./src/assets/carrosel-onca.jpg" alt="onça pintada">
-                </picture>
-                <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-tucano.jpg">
-                    <img src="./src/assets/carrosel-tucano.jpg" alt="tucano">
-                </picture>
-                <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-iguana.jpg">
-                    <img src="./src/assets/carrosel-iguana.jpg" alt="iguana">
-                </picture>
-                <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-urubu.jpg">
-                    <img src="./src/assets/carrosel-urubu.jpg" alt="urubu rei">
-                </picture>
-            </div>
-            <div class="carrosel__sobre">
-                <h1 class="carrosel__destaque">Onça pintada</h1>
-                <p class="carrosel__descricao">Maior felídeo das Américas, ocorre por todo o Brasil, ocupando florestas
-                    densas da Amazônia e Mata Atlântica.</p>
-                <button class="carrosel-sobre__btn"><a href="./animais/categorias.html">veja mais</a></button>
-            </div>
-            <div class="optioncarrosel">
-                <div class="options"></div>
-                <div class="options"></div>
-                <div class="options"></div>
-                <div class="options"></div>
-            </div>
-        </section>
         <div class="main__container">
-            <section class="main__animais">
-                <h1>Conheça os animais do zoológico!</h1>
-                <div class="main-animais__img"></div>
-                <button class="main-animais__btn"><a href="./animais/categorias.html">veja mais</a></button>
-            </section>
-            <section class="main__sobre">
-                <h1>Conheça a história do zoológico!</h1>
-                <div class="main-sobre__img"></div>
-                <button class="main-sobre__btn"><a href="./sobre.html">veja mais</a></button>
-            </section>
-            <section class="main__comochegar">
-                <h1>Venha desfrutar das áreas de lazer!</h1>
-                <div class="main-comochegar__img"></div>
-                <button class="main-comochegar__btn"><a href="./como-cheagar.html">veja mais</a></button>
+            <section class="main__categoria">
+                <div class="main-categoria__row1 ">
+                    <a href="./aves.html" class="no_visual__a">
+                        <div id="main-categoria__aves">
+                            <picture>
+                                <source media="(min-width: )" srcset="">
+                                <img src="../src/assets/categoria-aves.jpg" alt="">
+                            </picture>
+                            <h2 class="main-cateria__title">aves</h2>
+                        </div>
+                    </a>
+                    <a href="./repteis.html" class="no_visual__a">
+                        <div id="main-categoria__repteis">
+                            <picture>
+                                <source media="(min-width: )" srcset="">
+                                <img src="../src/assets/categoria-repteis.jpg" alt="">
+                            </picture>
+                            <h2 class="main-cateria__title">repteis</h2>
+                        </div>
+                    </a>
+                </div>
+                <a href="./mamiferos.html" class="no_visual__a">
+                    <div class="main-categoria__row2">
+                        <div id="main-categoria__mamiferos">
+                            <picture>
+                                <source media="(min-width: )" srcset="">
+                                <img src="../src/assets/categoria-mamiferos.jpg" alt="">
+                            </picture>
+                            <h2 class="main-cateria__title">mámiferos</h2>
+                        </div>
+                    </div>
+                </a>
             </section>
         </div>
     </main>
@@ -90,22 +76,22 @@
         <div class="footer__container">
             <div class="footer__logo">
                 <a href="https://www.guarulhos.sp.gov.br/" target="_blank" rel="external">
-                    <img src="./src/assets/logo-perfeitura.png" alt="logo da prefeitura de Guarulhos">
+                    <img src="../src/assets/logo-perfeitura.png" alt="logo da prefeitura de Guarulhos">
                 </a>
             </div>
             <nav class="footer__nav">
                 <ul>
                     <li class="footer-nav__link">
-                        <a href="#">home</a>
+                        <a href="../index.html">home</a>
                     </li>
                     <li class="footer-nav__link">
-                        <a href="./sobre.html">sobre o zoo</a>
+                        <a href="../sobre.html">sobre o zoo</a>
                     </li>
                     <li class="footer-nav__link">
-                        <a href="./animais/categorias.html">animais</a>
+                        <a href="#">animais</a>
                     </li>
                     <li class="footer-nav__link">
-                        <a href="./como-cheagar.html">como chegar</a>
+                        <a href="../como-cheagar.html">como chegar</a>
                     </li>
                 </ul>
             </nav>
