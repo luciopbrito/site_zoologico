@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@200;400&display=swap");
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bege: #e7ddbb;
+  --color-verde-claro: #2f7443;
+  --color-azul-claro: #83add7;
+  --color-azul-escuro: #0a2463;
+  --color-azul-marinho: #8ed5e2;
+  --back-off-padding: 0 7rem;
+  --back-off-invert-padding: 0 -7rem;
+  --btn-radius: 5rem;
+  --btn-bgcolor: var(--color-azul-marinho);
+  --btn-color: var(--color-azul-escuro);
+  --btn-display: flex;
+  --btn-justContent: center;
+  --btn-aligItems: center;
+  --btn-padding: 1rem 2rem;
+  --btn-hover-carrosel: var(--color-verde-claro);
+  --btn-hover: var(--color-azul-claro);
+  --a-text-decoration: none;
+  --a-color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Inter;
+}
+
+.header {
+  width: 100%;
+  height: 7rem;
+  background-color: var(--color-verde-claro);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--back-off-padding);
+  color: white;
+  height: 100%;
+}
+
+.header__nav ul,
+.footer__nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+  list-style: none;
+}
+
+.header-nav__link a,
+.footer-nav__link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-nav__link a:hover,
+.footer-nav__link a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 100%;
+  padding: var(--back-off-padding);
+}
+
+.main__container {
+  background-color: var(--color-bege);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rem;
+  padding: 20rem 5rem;
+}
+
+.carrosel {
+  margin: var(--back-off-invert-padding);
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+.carrosel__container {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.carrosel__image {
+  width: 100%;
+}
+
+.carrosel__image img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.carrosel__sobre {
+  position: absolute;
+  left: 10rem;
+  bottom: 10rem;
+  width: 50rem;
+  font: 1.5em Fredoka One;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: inherit;
+}
+
+.carrosel-sobre__btn {
+  border-radius: var(--btn-radius);
+  background-color: var(--btn-bgcolor);
+}
+
+.carrosel-sobre__btn {
+  width: fit-content;
+  display: var(--btn-display);
+  justify-content: var(--btn-justContent);
+  align-items: var(--btn-aligItems);
+  padding: var(--btn-padding);
+  color: var(--btn-color);
+  font: inherit;
+}
+
+.carrosel-sobre__btn:hover {
+  color: black;
+  background-color: var(--btn-hover);
+}
+
+.carrosel-sobre__btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.optioncarrosel {
+  display: flex;
+  justify-content: space-between;
+  width: 6rem;
+  position: absolute;
+  bottom: 8rem;
+  right: 50%;
+}
+
+.options {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: var(--color-azul-claro);
+}
+
+.optioncurrent {
+  background-color: var(--color-azul-escuro);
+}
+
+.main__animais,
+.main__sobre,
+.main__comochegar {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-animais__img,
+.main-sobre__img,
+.main-comochegar__img {
+  width: 100%;
+  height: 40rem;
+}
+
+.main-animais__img {
+  background-image: url(./src/assets/main-animais.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-sobre__img {
+  background-image: url(./src/assets/main-sobre.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-comochegar__img {
+  background-image: url(./src/assets/main-comochegar.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-animais__btn,
+.main-sobre__btn,
+.main-comochegar__btn {
+  border-radius: var(--btn-radius);
+  background-color: var(--btn-bgcolor);
+  font-weight: bold;
+  color: var(--btn-color);
+}
+
+.main-animais__btn > a,
+.main-sobre__btn > a,
+.main-comochegar__btn > a {
+  padding: var(--btn-padding);
+  color: var(--btn-color);
+  display: var(--btn-display);
+  justify-content: var(--btn-justContent);
+  align-items: var(--btn-aligItems);
+  text-decoration: var(--a-text-decoration);
+  text-transform: capitalize;
+}
+
+.main-animais__btn:hover,
+.main-sobre__btn:hover,
+.main-comochegar__btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.footer {
+  width: 100%;
+  background-color: var(--color-verde-claro);
+  height: 20rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+    "logo nav icones"
+    ". copyright .";
+  gap: 6rem 7rem;
+  justify-content: stretch;
+  align-content: center;
+  padding: var(--back-off-padding);
+  color: white;
+  height: 100%;
+}
+
+.footer__logo {
+  grid-area: logo;
+}
+
+.footer__nav {
+  grid-area: nav;
+  justify-self: center;
+}
+
+.footer__icones {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.icones a {
+  text-decoration: var(--a-text-decoration);
+  color: var(--a-color);
+}
+
+.icones a:hover {
+  text-decoration: var(--a-text-decoration);
+  color: var(--color-azul-claro);
+}
+
+.copyright {
+  grid-area: copyright;
+  font-size: 1em;
+  text-align: center;
+}
