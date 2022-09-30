@@ -37,10 +37,30 @@ body {
   font-family: Inter;
 }
 
+main {
+  width: 100%;
+  padding: var(--back-off-padding);
+}
+
+.footer {
+  width: 100%;
+  background-color: var(--color-verde-claro);
+  height: 20rem;
+}
+
 .header {
   width: 100%;
   height: 7rem;
   background-color: var(--color-verde-claro);
+}
+
+p {
+  line-height: 2em;
+}
+
+.no_visual__a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .header__container {
@@ -71,18 +91,19 @@ body {
   text-decoration: underline;
 }
 
-main {
-  width: 100%;
-  padding: var(--back-off-padding);
-}
-
 .main__container {
   background-color: var(--color-bege);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20rem;
-  padding: 20rem 5rem;
+  gap: 10rem;
+  padding: 10rem 5rem;
+}
+
+.main__categoria {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .carrosel {
@@ -165,9 +186,9 @@ main {
   background-color: var(--color-azul-escuro);
 }
 
-.main__animais,
-.main__sobre,
-.main__comochegar {
+.main-animais__banner,
+.main-sobre__banner,
+.main-comochegar__banner {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -180,6 +201,39 @@ main {
 .main-comochegar__img {
   width: 100%;
   height: 40rem;
+}
+
+.main-sobre-historia__title,
+.main-estrutura__title,
+.main-areas__title {
+  text-transform: capitalize;
+}
+
+.maintitle {
+  text-align: center;
+  font-size: 2em;
+}
+
+.main-sobre__historia,
+.main-sobre__estrutura,
+.main-sobre__areas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.main-sobre__images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.main-areas__img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .main-animais__img {
@@ -225,6 +279,34 @@ main {
 .main-sobre__btn:hover,
 .main-comochegar__btn:hover {
   background-color: var(--btn-hover);
+}
+
+#main-categoria__aves,
+#main-categoria__repteis,
+#main-categoria__mamiferos {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+  transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-categoria__aves:hover,
+#main-categoria__repteis:hover,
+#main-categoria__mamiferos:hover {
+  transform: scale(1.1);
+}
+
+.main-cateria__title {
+  text-transform: capitalize;
+}
+
+.main-categoria__row1,
+.main-categoria__row2 {
+  display: flex;
+  justify-content: center;
 }
 
 .footer {

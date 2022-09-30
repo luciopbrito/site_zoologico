@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="./scripts/jquery/carrosel.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Site Guarulhos</title>
 </head>
@@ -20,10 +19,10 @@
             <nav class="header__nav">
                 <ul>
                     <li class="header-nav__link">
-                        <a href="#">home</a>
+                        <a href="./index.html">home</a>
                     </li>
                     <li class="header-nav__link">
-                        <a href="./sobre.html">sobre o zoo</a>
+                        <a href="#">sobre o zoo</a>
                     </li>
                     <li class="header-nav__link">
                         <a href="./animais/categorias.html">animais</a>
@@ -36,53 +35,40 @@
         </div>
     </header>
     <main class="main">
-        <section class="carrosel">
-            <div class="carrosel__container">
-                <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-onca.jpg">
-                    <img src="./src/assets/carrosel-onca.jpg" alt="onça pintada">
-                </picture>
-                <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-tucano.jpg">
-                    <img src="./src/assets/carrosel-tucano.jpg" alt="tucano">
-                </picture>
-                <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-iguana.jpg">
-                    <img src="./src/assets/carrosel-iguana.jpg" alt="iguana">
-                </picture>
-                <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-urubu.jpg">
-                    <img src="./src/assets/carrosel-urubu.jpg" alt="urubu rei">
-                </picture>
-            </div>
-            <div class="carrosel__sobre">
-                <h1 class="carrosel__destaque">Onça pintada</h1>
-                <p class="carrosel__descricao">Maior felídeo das Américas, ocorre por todo o Brasil, ocupando florestas
-                    densas da Amazônia e Mata Atlântica.</p>
-                <button class="carrosel-sobre__btn"><a href="./animais/categorias.html">veja mais</a></button>
-            </div>
-            <div class="optioncarrosel">
-                <div class="options"></div>
-                <div class="options"></div>
-                <div class="options"></div>
-                <div class="options"></div>
-            </div>
-        </section>
         <div class="main__container">
-            <section class="main-animais__banner">
-                <h1>Conheça os animais do zoológico!</h1>
-                <div class="main-animais__img"></div>
-                <button class="main-animais__btn"><a href="./animais/categorias.html">veja mais</a></button>
+            <section class="main-sobre__historia">
+                <h1 class="main-sobre-historia__title maintitle">sobre o zoo</h1>
+                <p>
+                    O Zoológico de Guarulhos, criado em 1981, mantém cerca de 500 animais, de 100 diferentes espécies, priorizando a fauna nacional, com 91% de espécies nativas. O Zoo participa de programas de conservação de espécies ameaçadas, realiza pesquisas científicas e atividades de educação para conservação. Os animais recebem cuidados constantes, tanto preventivos como curativos, por uma equipe de biólogos, veterinários e tratadores, incumbidos da manutenção de sua saúde e bem estar.
+                </p>
             </section>
-            <section class="main-sobre__banner">
-                <h1>Conheça a história do zoológico!</h1>
-                <div class="main-sobre__img"></div>
-                <button class="main-sobre__btn"><a href="./sobre.html">veja mais</a></button>
+            <section class="main-sobre__estrutura">
+                <h2 class="main-estrutura__title">estrutura</h2>
+                <p>
+                    A estrutura do zoo conta com 59 recintos de exposição, setor extra e quarentenário, que abrigam os animais residentes e animais recém-chegados e em tratamento. Há no local clínica veterinária e área de manejo, com salas de atendimento, laboratório, sala de cirurgia, área de internação e sala de necropsia, e também um setor de alimentação e biotério para produção de alimentos vivos.
+                </p>
+                <div class="main-sobre__images">
+                    <picture>
+                        <source media="(min-width: )" srcset="./src/assets/image-laboratorio1.jpg">
+                        <img src="./src/assets/image-laboratorio1.jpg" alt="Imagem com duas cadeiras, duas estantes e uma bancada com muitos equipamentos e medicamentos usados na Clínica Veterinária no Zoológico de Guarulhos" title="Clínica Veterinária do zoológico de Guarulhos">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: )" srcset="./src/assets/">
+                        <img src="./src/assets/image-laboratorio2.jpg" alt="Imagem do Laboratório Veterinário no Zoológico de Guarulhos com um doutor cuidando do animal manipulando ferramentas para auxiliá-lo" title="Laboratório Veterinário do Zoológico de Guarulhos">
+                    </picture>
+                </div>
             </section>
-            <section class="main-comochegar__banner">
-                <h1>Venha desfrutar das áreas de lazer!</h1>
-                <div class="main-comochegar__img"></div>
-                <button class="main-comochegar__btn"><a href="./como-cheagar.html">veja mais</a></button>
+            <section class="main-sobre__areas">
+                <h2 class="main-areas__title">áreas</h2>
+                <p>
+                    O Zoo possui uma área de mata e lagos que atraem muitas espécies de aves de vida livre, que podem ser observadas e fotografadas facilmente, tornando o passeio ainda mais agradável.
+                </p>
+                <div class="main-areas__img">
+                    <picture>
+                        <source media="(min-width: )" srcset="./scr/assets/">
+                        <img src="./src/assets/image-area.jpg" alt="Imagem do ambiente dos Flamingos no Zoológico de Guarulhos, com muitos Flamingos com árvores e um lago" title="Habitat dos Flamingos no Zoológico de Guarulhos">
+                    </picture>
+                </div>
             </section>
         </div>
     </main>
@@ -96,10 +82,10 @@
             <nav class="footer__nav">
                 <ul>
                     <li class="footer-nav__link">
-                        <a href="#">home</a>
+                        <a href="./index.html">home</a>
                     </li>
                     <li class="footer-nav__link">
-                        <a href="./sobre.html">sobre o zoo</a>
+                        <a href="#">sobre o zoo</a>
                     </li>
                     <li class="footer-nav__link">
                         <a href="./animais/categorias.html">animais</a>
