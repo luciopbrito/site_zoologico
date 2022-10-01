@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="./scripts/jquery/carrosel.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Site Guarulhos</title>
 </head>
@@ -20,7 +19,7 @@
             <nav class="header__nav">
                 <ul>
                     <li class="header-nav__link">
-                        <a href="#">home</a>
+                        <a href="./index.html">home</a>
                     </li>
                     <li class="header-nav__link">
                         <a href="./sobre.html">sobre o zoo</a>
@@ -29,61 +28,32 @@
                         <a href="./animais/categorias.html">animais</a>
                     </li>
                     <li class="header-nav__link">
-                        <a href="./como-chegar.html">como chegar</a>
+                        <a href="#">como chegar</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="main">
-        <section class="carrosel">
-            <div class="carrosel__container">
-                <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-onca.jpg">
-                    <img src="./src/assets/carrosel-onca.jpg" alt="onça pintada">
-                </picture>
-                <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-tucano.jpg">
-                    <img src="./src/assets/carrosel-tucano.jpg" alt="tucano">
-                </picture>
-                <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-iguana.jpg">
-                    <img src="./src/assets/carrosel-iguana.jpg" alt="iguana">
-                </picture>
-                <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-urubu.jpg">
-                    <img src="./src/assets/carrosel-urubu.jpg" alt="urubu rei">
-                </picture>
-            </div>
-            <div class="carrosel__sobre">
-                <h1 class="carrosel__destaque">Onça pintada</h1>
-                <p class="carrosel__descricao">Maior felídeo das Américas, ocorre por todo o Brasil, ocupando florestas
-                    densas da Amazônia e Mata Atlântica.</p>
-                <button class="carrosel-sobre__btn"><a href="./animais/categorias.html">veja mais</a></button>
-            </div>
-            <div class="optioncarrosel">
-                <div class="options"></div>
-                <div class="options"></div>
-                <div class="options"></div>
-                <div class="options"></div>
-            </div>
-        </section>
         <div class="main__container">
-            <section class="main-animais__banner">
-                <h1>Conheça os animais do zoológico!</h1>
-                <div class="main-animais__img"></div>
-                <button class="main-animais__btn"><a href="./animais/categorias.html">veja mais</a></button>
-            </section>
-            <section class="main-sobre__banner">
-                <h1>Conheça a história do zoológico!</h1>
-                <div class="main-sobre__img"></div>
-                <button class="main-sobre__btn"><a href="./sobre.html">veja mais</a></button>
-            </section>
-            <section class="main-comochegar__banner">
-                <h1>Venha desfrutar das áreas de lazer!</h1>
-                <div class="main-comochegar__img"></div>
-                <button class="main-comochegar__btn"><a href="./como-cheagar.html">veja mais</a></button>
-            </section>
+            <h1 class="maintitle">como chegar?</h1>
+            <section class="main__endereco">
+                <h2 class="main-endereco__title">endereço</h2>
+                <p>Rua Dona Gloria Pagnoncelli 344 Jardim Rosa de França – Guarulhos – São Paulo – Brasil CEP: 07081-120</p>
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Don%C3%A1%20Gl%C3%B3ria%20Pagnonceli,%20344%20-%20Jardim%20Rosa%20de%20Franca,%20Guarulhos%20-%20SP,%2007081-120&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </section>     
+            <section class="main__telefones">
+                <h2 class="main-telefones__title">Telefones:</h2>
+                <ul>
+                    <li>Setor técnico: (11) 2452-4523</li>
+                    <li>Setor administrativo: (11) 2455-4999</li>
+                    <li>Gerência: (11) 2452-4558</li>
+                    <li>Educação ambiental: (11) 2455</li>
+                    <li>E-mail de contato: manejo.zooguarulhos@gmail.com</li>
+                </ul>
+            </section>       
         </div>
     </main>
     <footer class="footer">
@@ -96,7 +66,7 @@
             <nav class="footer__nav">
                 <ul>
                     <li class="footer-nav__link">
-                        <a href="#">home</a>
+                        <a href="./index.html">home</a>
                     </li>
                     <li class="footer-nav__link">
                         <a href="./sobre.html">sobre o zoo</a>
@@ -105,7 +75,7 @@
                         <a href="./animais/categorias.html">animais</a>
                     </li>
                     <li class="footer-nav__link">
-                        <a href="./como-chegar.html">como chegar</a>
+                        <a href="#">como chegar</a>
                     </li>
                 </ul>
             </nav>

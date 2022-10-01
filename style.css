@@ -205,8 +205,14 @@ p {
 
 .main-sobre-historia__title,
 .main-estrutura__title,
-.main-areas__title {
+.main-areas__title,
+.main-endereco__title,
+.main-telefones__title {
   text-transform: capitalize;
+}
+
+.main__telefones > ul {
+  list-style-type: none;
 }
 
 .maintitle {
@@ -299,7 +305,7 @@ p {
   transform: scale(1.1);
 }
 
-.main-cateria__title {
+.main-categoria__title {
   text-transform: capitalize;
 }
 
@@ -307,6 +313,14 @@ p {
 .main-categoria__row2 {
   display: flex;
   justify-content: center;
+}
+
+.main__endereco,
+.main__telefones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
 }
 
 .footer {
@@ -358,4 +372,11 @@ p {
   grid-area: copyright;
   font-size: 1em;
   text-align: center;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 50rem;
+  width: 100%;
 }
