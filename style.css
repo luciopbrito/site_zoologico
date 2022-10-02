@@ -203,7 +203,6 @@ p {
   height: 40rem;
 }
 
-.main-sobre-historia__title,
 .main-estrutura__title,
 .main-areas__title,
 .main-endereco__title,
@@ -218,6 +217,7 @@ p {
 .maintitle {
   text-align: center;
   font-size: 2em;
+  text-transform: capitalize;
 }
 
 .main-sobre__historia,
