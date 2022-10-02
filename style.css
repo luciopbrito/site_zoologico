@@ -380,3 +380,14 @@ p {
   height: 50rem;
   width: 100%;
 }
+
+.main-animal__tipo {
+  display: flex;
+  padding: 5rem;
+  gap: 5rem;
+  align-items: center;
+}
+
+.main-animail__title {
+  margin: 0 0 2.5rem 0;
+}
