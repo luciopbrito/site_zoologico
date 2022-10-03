@@ -186,9 +186,7 @@ p {
   background-color: var(--color-azul-escuro);
 }
 
-.main-animais__banner,
-.main-sobre__banner,
-.main-comochegar__banner {
+.main__banner {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -196,11 +194,15 @@ p {
   gap: 2rem;
 }
 
-.main-animais__img,
-.main-sobre__img,
-.main-comochegar__img {
+.main-banner__img {
   width: 100%;
   height: 40rem;
+}
+
+.main-banner__img > img {
+  max-width: 60rem;
+  min-width: 25rem;
+  width: auto;
 }
 
 .main-estrutura__title,
@@ -242,36 +244,14 @@ p {
   justify-content: center;
 }
 
-.main-animais__img {
-  background-image: url(./src/assets/main-animais.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.main-sobre__img {
-  background-image: url(./src/assets/main-sobre.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.main-comochegar__img {
-  background-image: url(./src/assets/main-comochegar.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.main-animais__btn,
-.main-sobre__btn,
-.main-comochegar__btn {
+.main-banner__btn {
   border-radius: var(--btn-radius);
   background-color: var(--btn-bgcolor);
   font-weight: bold;
   color: var(--btn-color);
 }
 
-.main-animais__btn > a,
-.main-sobre__btn > a,
-.main-comochegar__btn > a {
+.main-banner__btn > a {
   padding: var(--btn-padding);
   color: var(--btn-color);
   display: var(--btn-display);
@@ -281,9 +261,7 @@ p {
   text-transform: capitalize;
 }
 
-.main-animais__btn:hover,
-.main-sobre__btn:hover,
-.main-comochegar__btn:hover {
+.main-banner__btn:hover {
   background-color: var(--btn-hover);
 }
 
