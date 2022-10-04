@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="./scripts/jquery/carrosel.js" defer></script>
+    <script src="./scripts/jquery/menu.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Site Guarulhos</title>
 </head>
@@ -17,42 +18,51 @@
             <div class="header__logo">
                 <a href="#"><img src="./src/assets/logo.png" alt="logo do zoo. Zoo Zoológico-SP"></a>
             </div>
-            <nav class="header__nav">
-                <ul>
-                    <li class="header-nav__link">
-                        <a href="#">home</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="./sobre.html">sobre o zoo</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="./animais/categorias.html">animais</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="./como-chegar.html">como chegar</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="menu-mobile off">
+                <div class="menu-toggle">
+                    <img src="./src/assets/icons/list.svg" alt="">
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li class="header-nav__link">
+                            <a href="#">home</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="./sobre.html">sobre o zoo</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="./animais/categorias.html">animais</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="./como-chegar.html">como chegar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="main">
         <section class="carrosel">
             <div class="carrosel__container">
                 <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-onca.jpg">
-                    <img src="./src/assets/carrosel-onca.jpg" alt="onça pintada">
+                    <source media="(min-width: 1000px)" srcset="./src/assets/carrosel-onca.jpg">
+                    <source media="(min-width: 400px)" srcset="./src/assets/carrosel-onca-m.jpg">
+                    <img src="./src/assets/carrosel-onca-p.jpg" alt="onça pintada">
                 </picture>
                 <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-tucano.jpg">
-                    <img src="./src/assets/carrosel-tucano.jpg" alt="tucano">
+                    <source media="(min-width: 1000px)" srcset="./src/assets/carrosel-tucano.jpg">
+                    <source media="(min-width: 400px)" srcset="./src/assets/carrosel-tucano-m.jpg">
+                    <img src="./src/assets/carrosel-tucano-p.jpg" alt="tucano">
                 </picture>
                 <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-iguana.jpg">
-                    <img src="./src/assets/carrosel-iguana.jpg" alt="iguana">
+                    <source media="(min-width: 1000px)" srcset="./src/assets/carrosel-iguana.jpg">
+                    <source media="(min-width: 400px)" srcset="./src/assets/carrosel-iguana-m.jpg">
+                    <img src="./src/assets/carrosel-iguana-p.jpg" alt="iguana">
                 </picture>
                 <picture class="carrosel__image">
-                    <source media="(min-width: 600px)" srcset="./src/assets/carrosel-urubu.jpg">
-                    <img src="./src/assets/carrosel-urubu.jpg" alt="urubu rei">
+                    <source media="(min-width: 1000px)" srcset="./src/assets/carrosel-urubu.jpg">
+                    <source media="(min-width: 400px)" srcset="./src/assets/carrosel-urubu-m.jpg">
+                    <img src="./src/assets/carrosel-urubu-p.jpg" alt="urubu rei">
                 </picture>
             </div>
             <div class="carrosel__sobre">
