@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../scripts/jquery/menu.js" defer></script>
     <title>Site Guarulhos</title>
 </head>
 
@@ -16,36 +17,39 @@
             <div class="header__logo">
                 <a href="../index.html"><img src="../src/assets/logo.png" alt="logo do zoo. Zoo Zoológico-SP"></a>
             </div>
-            <nav class="header__nav">
-                <ul>
-                    <li class="header-nav__link">
-                        <a href="../index.html">home</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="../sobre.html">sobre o zoo</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="./categorias.html">animais</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="../como-chegar.html">como chegar</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="menu-mobile off">
+                <div class="menu-toggle">
+                    <img src="../src/assets/icons/list.svg" alt="">
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li class="header-nav__link">
+                            <a href="../index.html">home</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="../sobre.html">sobre o zoo</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="./categorias.html">animais</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="../como-chegar.html">como chegar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="main">
         <div class="main__container">
             <h1 class="maintitle">Aves</h1>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/mutum-do-sudeste-ave.jpg">
-                        <img src="../src/assets/mutum-do-sudeste-ave.jpg" alt="Imagem de um Mutum do Sudeste parado sobre o chão" title="Mutum do sudeste">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/mutum-do-sudeste-ave.jpg"
+                        alt="Imagem de um Mutum do Sudeste parado sobre o chão" title="Mutum do sudeste">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Mutum do sudeste (Crax blumenbachii)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Mutum do sudeste (Crax blumenbachii)</h2>
                     <p>
                         Espécie endêmica da Mata Atlântica de baixada, passa a maior parte do tempo no solo, onde se
                         alimenta de frutos e sementes, e se empoleira para dormir e nidificar. Atualmente é encontrado
@@ -55,14 +59,12 @@
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/mutum-de-penacho-ave.jpg">
-                        <img src="../src/assets/mutum-de-penacho-ave.jpg" alt="Imagem de um Mutum de penacho andando sobre o chão" title="Mutum de penacho">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/mutum-de-penacho-ave.jpg"
+                        alt="Imagem de um Mutum de penacho andando sobre o chão" title="Mutum de penacho">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Mutum de penacho (Crax fasciolata)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Mutum de penacho (Crax fasciolata)</h2>
                     <p>
                         Vive aos pares ou pequenos grupos familiares. Ave ocorrente no sul do Amazonas, Maranhão, e do
                         Brasil central até o oeste de São Paulo, Paraná e Minas Gerais. Em risco de extinção
@@ -73,14 +75,12 @@
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/papagaio-de-peito-roxo-ave.jpg">
-                        <img src="../src/assets/papagaio-de-peito-roxo-ave.jpg" alt="Imagem de um Papagaio de peito roxo sobre um galho" title="Papagaio de peito roxo">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/papagaio-de-peito-roxo-ave.jpg"
+                        alt="Imagem de um Papagaio de peito roxo sobre um galho" title="Papagaio de peito roxo">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Papagaio de peito roxo (Amazona vinacea)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Papagaio de peito roxo (Amazona vinacea)</h2>
                     <p>
                         Caracterizado pela coloração arroxeada do peito, este papagaio habita as florestas frias,
                         principalmente matas de araucárias, formando grandes bandos. Antes encontrada desde a Bahia até
@@ -90,14 +90,12 @@
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/arara-vermelha-ave.jpg">
-                        <img src="../src/assets/arara-vermelha-ave.jpg" alt="Imagem de uma Arara Vermelho sobre um galho" title="Arara vermelha">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/arara-vermelha-ave.jpg" alt="Imagem de uma Arara Vermelho sobre um galho"
+                        title="Arara vermelha">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Arara vermelha (Ara chloroptera)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Arara vermelha (Ara chloroptera)</h2>
                     <p>
                         No Brasil ocorre desde a Amazônia até o oeste do Piauí, Bahia, Minas Gerais, Mato Grosso do Sul
                         e São Paulo. Mede até 90 cm e pesa até 1,5 kg. Os ovos medem cerca de 5 cm, com incubação feita
@@ -107,14 +105,12 @@
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/urubu-rei-ave.jpg">
-                        <img src="../src/assets/urubu-rei-ave.jpg" alt="Imagem de um Urubu Rei sobre um galho" title="Urubu rei">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/urubu-rei-ave.jpg" alt="Imagem de um Urubu Rei sobre um galho"
+                        title="Urubu rei">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Urubu rei (Sarcoramphus papa)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Urubu rei (Sarcoramphus papa)</h2>
                     <p>
                         Ocorre em florestas densas e áreas abertas adjacentes. Devido à baixa reprodutividade da espécie
                         e a degradação do seu habitat, é uma espécie cada vez mais rara. Possui envergadura que varia de
@@ -125,14 +121,12 @@
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/tucano-toco-ave.jpg">
-                        <img src="../src/assets/tucano-toco-ave.jpg" alt="Imagem de um Tucano Toco sobre um galho" title="Tucano Toco">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/tucano-toco-ave.jpg" alt="Imagem de um Tucano Toco sobre um galho"
+                        title="Tucano Toco">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Tucano Toco (Ramphastos toco)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Tucano Toco (Ramphastos toco)</h2>
                     <p>
                         Ramphastos toco, popularmente conhecido como tucanuçu, tucanaçu, tucano-grande e tucano-boi, é
                         uma espécie de tucano e o maior representante da família Ramphastidae
@@ -140,14 +134,11 @@
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/ema-ave.jpg">
-                        <img src="../src/assets/ema-ave.jpg" alt="imagem de uma Ema em um campo" title="Ema">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/ema-ave.jpg" alt="imagem de uma Ema em um campo" title="Ema">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Ema (Rhea americana)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Ema (Rhea americana)</h2>
                     <p>
                         Maior ave das Américas, podendo chegar até 1,40 m. Ocorre em campos naturais, cerrados e áreas
                         agropecuárias. Machos diferem das fêmeas por possuírem a região anterior do peito e pescoço

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../scripts/jquery/menu.js" defer></script>
     <title>Site Guarulhos</title>
 </head>
 
@@ -16,122 +17,136 @@
             <div class="header__logo">
                 <a href="../index.html"><img src="../src/assets/logo.png" alt="logo do zoo. Zoo Zoológico-SP"></a>
             </div>
-            <nav class="header__nav">
-                <ul>
-                    <li class="header-nav__link">
-                        <a href="../index.html">home</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="../sobre.html">sobre o zoo</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="./categorias.html">animais</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="../como-chegar.html">como chegar</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="menu-mobile off">
+                <div class="menu-toggle">
+                    <img src="../src/assets/icons/list.svg" alt="">
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li class="header-nav__link">
+                            <a href="../index.html">home</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="../sobre.html">sobre o zoo</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="../animais/categorias.html">animais</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="../como-chegar.html">como chegar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="main">
         <div class="main__container">
             <h1 class="maintitle">Mámiferos</h1>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/lobo-guara-mamifero.jpg">
-                        <img src="../src/assets/lobo-guara-mamifero.jpg" alt="Imagem de uma Lobo guará parado perto de alguns bambus" title="Lobo guará">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/lobo-guara-mamifero.jpg"
+                        alt="Imagem de uma Lobo guará parado perto de alguns bambus" title="Lobo guará">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Lobo guará (Chrysocyon brachyurus)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Lobo guará (Chrysocyon brachyurus)</h2>
                     <p>
-                        É uma espécie de pernas longas, coloração alaranjada e orelhas grandes, que habita ambientes abertos como campos e cerrados. Ocorre no Brasil central, áreas do sudeste e sul. Alimentam-se de frutos e pequenos vertebrados, sendo injustamente acusados de predação de aves domésticas, o que leva a sua perseguição e abate, o que, aliado a atropelamentos, ameaça a espécie.
+                        É uma espécie de pernas longas, coloração alaranjada e orelhas grandes, que habita ambientes
+                        abertos como campos e cerrados. Ocorre no Brasil central, áreas do sudeste e sul. Alimentam-se
+                        de frutos e pequenos vertebrados, sendo injustamente acusados de predação de aves domésticas, o
+                        que leva a sua perseguição e abate, o que, aliado a atropelamentos, ameaça a espécie.
                     </p>
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/gato-do-mato-pequeno-mamifero.jpg">
-                        <img src="../src/assets/gato-do-mato-pequeno-mamifero.jpg" alt="Imagem de um Gato do mato pequeno parado" title="Gato do mato pequeno">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/gato-do-mato-pequeno-mamifero.jpg"
+                        alt="Imagem de um Gato do mato pequeno parado" title="Gato do mato pequeno">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Gato do mato pequeno (Leopardus tigrinus)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Gato do mato pequeno (Leopardus tigrinus)</h2>
                     <p>
-                        O menor felino brasileiro é um animal solitário, de hábito noturno, que habita o solo, mas é capaz de escalar árvores com facilidade, sendo encontrado em todos os biomas do Brasil. A gestação de cerca de 2 meses gera apenas um filhote. Embora possa adaptar-se a áreas modificadas pelo homem, a redução das áreas naturais ameaça a sobrevivência da espécie.
+                        O menor felino brasileiro é um animal solitário, de hábito noturno, que habita o solo, mas é
+                        capaz de escalar árvores com facilidade, sendo encontrado em todos os biomas do Brasil. A
+                        gestação de cerca de 2 meses gera apenas um filhote. Embora possa adaptar-se a áreas modificadas
+                        pelo homem, a redução das áreas naturais ameaça a sobrevivência da espécie.
                     </p>
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/onca-pintada-mamifero.jpg">
-                        <img src="../src/assets/onca-pintada-mamifero.jpg" alt="Imagem de um Onça pintada parado em uma mata" title="Onça pintada">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/onca-pintada-mamifero.jpg"
+                        alt="Imagem de um Onça pintada parado em uma mata" title="Onça pintada">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Onça pintada (Panthera onca)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Onça pintada (Panthera onca)</h2>
                     <p>
-                        Maior felídeo das Américas, ocorre por todo o Brasil, ocupando florestas densas da Amazônia e Mata Atlântica, áreas de Cerrado e Caatinga e o Pantanal. Necessitam grandes áreas com boa quantidade de presas para viver, sendo a redução de habitat e o isolamento ameaças à espécie. Os conflitos devido a predação e os atropelamentos são também fatores de impacto sobre as populações.
+                        Maior felídeo das Américas, ocorre por todo o Brasil, ocupando florestas densas da Amazônia e
+                        Mata Atlântica, áreas de Cerrado e Caatinga e o Pantanal. Necessitam grandes áreas com boa
+                        quantidade de presas para viver, sendo a redução de habitat e o isolamento ameaças à espécie. Os
+                        conflitos devido a predação e os atropelamentos são também fatores de impacto sobre as
+                        populações.
                     </p>
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/onca-parda-mamifero.jpg">
-                        <img src="../src/assets/onca-parda-mamifero.jpg" alt="Imagem de um Onça parda parada" title="Onça parda">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/onca-parda-mamifero.jpg" alt="Imagem de um Onça parda parada"
+                        title="Onça parda">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Onça parda (Puma concolor)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Onça parda (Puma concolor)</h2>
                     <p>
-                        Segundo maior felídeo das Américas, é encontrada em todos os biomas brasileiros. Animal de hábitos noturnos e terrestres, escala árvores com facilidade. Pode gerar de 2 a 4 filhotes em gestação de cerca de 90 dias. A caça, o desmatamento e fragmentação de áreas naturais, a redução da disponibilidade de presas e os atropelamentos são ameaças à sobrevivência da espécie.
+                        Segundo maior felídeo das Américas, é encontrada em todos os biomas brasileiros. Animal de
+                        hábitos noturnos e terrestres, escala árvores com facilidade. Pode gerar de 2 a 4 filhotes em
+                        gestação de cerca de 90 dias. A caça, o desmatamento e fragmentação de áreas naturais, a redução
+                        da disponibilidade de presas e os atropelamentos são ameaças à sobrevivência da espécie.
                     </p>
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/lontra-mamifero.jpg">
-                        <img src="../src/assets/lontra-mamifero.jpg" alt="Imagem de um Lontra dentro de um lago" title="Lontra">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/lontra-mamifero.jpg" alt="Imagem de um Lontra dentro de um lago"
+                        title="Lontra">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Lontra (Lontra longicaudis)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Lontra (Lontra longicaudis)</h2>
                     <p>
-                        Ocorrência na Amazônia, cerrado, mata atlântica, pantanal e campos do sul. Alimenta-se de peixes, crustáceos, répteis, aves e pequenos mamíferos. Possui geralmente hábito noturno. Os machos desta espécie apresentam hábito solitário e só se juntam à fêmea para reprodução. As principais ameaças são perda de habitat, poluição da água e caça.
+                        Ocorrência na Amazônia, cerrado, mata atlântica, pantanal e campos do sul. Alimenta-se de
+                        peixes, crustáceos, répteis, aves e pequenos mamíferos. Possui geralmente hábito noturno. Os
+                        machos desta espécie apresentam hábito solitário e só se juntam à fêmea para reprodução. As
+                        principais ameaças são perda de habitat, poluição da água e caça.
                     </p>
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/mico-leao-de-cara-dourada-mamifero.jpg">
-                        <img src="../src/assets/mico-leao-de-cara-dourada-mamifero.jpg" alt="Imagem de um Mico-leão-de-cara-dourada sobre um galho" title="Mico-leão-de-cara-dourada">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/mico-leao-de-cara-dourada-mamifero.jpg"
+                        alt="Imagem de um Mico-leão-de-cara-dourada sobre um galho" title="Mico-leão-de-cara-dourada">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Mico-leão-de-cara-dourada (Leontopithecus chrysomelas)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Mico-leão-de-cara-dourada (Leontopithecus chrysomelas)</h2>
                     <p>
-                        Vive em grupos de até 12 animais, no qual há apenas uma fêmea reprodutora que gera dois filhotes por gestação. Alimenta-se predominantemente de frutos e insetos. Vive cerca de 15 anos. Dorme em oco de árvores. Ocorre no sul da Bahia e nordeste de Minas Gerais. Desmatamentos e comércio ilegal reduziram severamente sua população.
+                        Vive em grupos de até 12 animais, no qual há apenas uma fêmea reprodutora que gera dois filhotes
+                        por gestação. Alimenta-se predominantemente de frutos e insetos. Vive cerca de 15 anos. Dorme em
+                        oco de árvores. Ocorre no sul da Bahia e nordeste de Minas Gerais. Desmatamentos e comércio
+                        ilegal reduziram severamente sua população.
                     </p>
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/tamandua-bandeira-mamifero.jpg ">
-                        <img src="../src/assets/tamandua-bandeira-mamifero.jpg  " alt="imagem de uma Tamanduá-bandeira andando sobre a grama" title="Tamanduá-bandeira">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/tamandua-bandeira-mamifero.jpg"
+                        alt="imagem de uma Tamanduá-bandeira andando sobre a grama" title="Tamanduá-bandeira">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Tamanduá-bandeira (Myrmecophaga tridactyla)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Tamanduá-bandeira (Myrmecophaga tridactyla)</h2>
                     <p>
-                        Rosto alongado e fino, grande língua com saliva pegajosa e garras fortes são evidências da adaptação do tamanduá a uma alimentação exclusiva à base de formigas e cupins. Solitário, encontra parceiros apenas para a reprodução. Nasce um filhote após gestação de 190 dias. Habita cerrados, campos e florestas úmidas das Américas do Sul e Central. A espécie é vítima de atropelamentos, incêndios e caça ilegal.
+                        Rosto alongado e fino, grande língua com saliva pegajosa e garras fortes são evidências da
+                        adaptação do tamanduá a uma alimentação exclusiva à base de formigas e cupins. Solitário,
+                        encontra parceiros apenas para a reprodução. Nasce um filhote após gestação de 190 dias. Habita
+                        cerrados, campos e florestas úmidas das Américas do Sul e Central. A espécie é vítima de
+                        atropelamentos, incêndios e caça ilegal.
                     </p>
                 </div>
             </div>

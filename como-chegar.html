@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./scripts/jquery/menu.js" defer></script>
     <title>Site Guarulhos</title>
 </head>
 
@@ -16,22 +17,27 @@
             <div class="header__logo">
                 <a href="#"><img src="./src/assets/logo.png" alt="logo do zoo. Zoo Zoológico-SP"></a>
             </div>
-            <nav class="header__nav">
-                <ul>
-                    <li class="header-nav__link">
-                        <a href="./index.html">home</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="./sobre.html">sobre o zoo</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="./animais/categorias.html">animais</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="#">como chegar</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="menu-mobile off">
+                <div class="menu-toggle">
+                    <img src="./src/assets/icons/list.svg" alt="icone para abrir o menu mobile">
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li class="header-nav__link">
+                            <a href="./index.html">home</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="./sobre.html">sobre o zoo</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="./animais/categorias.html">animais</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="./como-chegar.html">como chegar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -39,11 +45,14 @@
             <h1 class="maintitle">como chegar?</h1>
             <section class="main__endereco">
                 <h2 class="main-endereco__title">endereço</h2>
-                <p>Rua Dona Gloria Pagnoncelli 344 Jardim Rosa de França – Guarulhos – São Paulo – Brasil CEP: 07081-120</p>
+                <p>Rua Dona Gloria Pagnoncelli 344 Jardim Rosa de França – Guarulhos – São Paulo – Brasil CEP: 07081-120
+                </p>
                 <div class="gmap_canvas">
-                    <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Don%C3%A1%20Gl%C3%B3ria%20Pagnonceli,%20344%20-%20Jardim%20Rosa%20de%20Franca,%20Guarulhos%20-%20SP,%2007081-120&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <iframe width="100%" height="100%" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Av.%20Don%C3%A1%20Gl%C3%B3ria%20Pagnonceli,%20344%20-%20Jardim%20Rosa%20de%20Franca,%20Guarulhos%20-%20SP,%2007081-120&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 </div>
-            </section>     
+            </section>
             <section class="main__telefones">
                 <h2 class="main-telefones__title">Telefones:</h2>
                 <ul>
@@ -53,7 +62,7 @@
                     <li>Educação ambiental: (11) 2455</li>
                     <li>E-mail de contato: manejo.zooguarulhos@gmail.com</li>
                 </ul>
-            </section>       
+            </section>
         </div>
     </main>
     <footer class="footer">

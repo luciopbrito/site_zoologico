@@ -37,16 +37,11 @@ body {
   width: 100%;
   font-size: 1.6rem;
   font-family: Inter;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
 }
 
 .main {
   width: 90%;
   padding: var(--back-off-padding);
-  grid-area: main;
   margin: 0 auto;
 }
 
@@ -58,11 +53,11 @@ h1 {
   width: 100%;
   height: 7rem;
   background-color: var(--color-verde-claro);
-  grid-area: header;
 }
 
 p {
   line-height: 2em;
+  text-align: justify;
 }
 
 .no_visual__a {
@@ -77,7 +72,8 @@ p {
   align-items: center;
   padding: var(--back-off-padding);
   color: white;
-  height: 90%;
+  width: 90%;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -127,8 +123,11 @@ p {
 
 .main__categoria {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
   gap: 2rem;
+  width: 100%;
 }
 
 .carrosel {
@@ -267,12 +266,25 @@ p {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.main-sobre__images img {
+  max-width: 70rem;
+  min-width: 20rem;
+  width: auto;
 }
 
 .main-areas__img {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.main-areas__img img {
+  max-width: 70rem;
+  min-width: 20rem;
+  width: auto;
 }
 
 .main-banner__btn {
@@ -296,10 +308,12 @@ p {
   background-color: var(--btn-hover);
 }
 
-#main-categoria__aves,
-#main-categoria__repteis,
-#main-categoria__mamiferos {
-  width: 50rem;
+.main-categoria__animais img {
+  width: 100%;
+}
+
+.main-categoria__animais {
+  max-width: 60rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -308,20 +322,12 @@ p {
   transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-#main-categoria__aves:hover,
-#main-categoria__repteis:hover,
-#main-categoria__mamiferos:hover {
+.main-categoria__animais:hover {
   transform: scale(1.1);
 }
 
 .main-categoria__title {
   text-transform: capitalize;
-}
-
-.main-categoria__row1,
-.main-categoria__row2 {
-  display: flex;
-  justify-content: center;
 }
 
 .main__endereco,
@@ -336,7 +342,6 @@ p {
   width: 100%;
   background-color: var(--color-verde-claro);
   height: 20rem;
-  grid-area: footer;
 }
 
 .footer__container {
@@ -346,7 +351,7 @@ p {
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas:
     "logo nav icones"
-    ". copyright .";
+    "copyright  copyright copyright";
   gap: 6rem 7rem;
   justify-content: stretch;
   align-content: center;
@@ -375,6 +380,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  grid-area: icones;
 }
 
 .icones a {
@@ -390,7 +396,8 @@ p {
 .copyright {
   grid-area: copyright;
   font-size: 1em;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .gmap_canvas {
@@ -401,13 +408,25 @@ p {
 }
 
 .main-animal__tipo {
+  width: 100%;
   display: flex;
-  padding: 5rem;
+  justify-content: space-around;
+  align-items: center;
   gap: 5rem;
+}
+
+.main-animal__img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.main-animail__title {
+.main-animal__img img {
+  max-width: 40rem;
+}
+
+.main-animal__title {
   margin: 0 0 2.5rem 0;
 }
 
@@ -454,10 +473,16 @@ p {
       "copyright";
     gap: 2rem;
     padding-top: 2rem;
+    width: 100%;
+    margin: 0;
   }
 }
 
 @media screen and (max-width: 1000px) {
+  .main-animal__img img {
+    max-width: 100%;
+  }
+
   .carrosel {
     height: 91vh;
   }
@@ -472,6 +497,10 @@ p {
 
   .carrosel {
     height: 50vh;
+  }
+
+  .main-animal__tipo {
+    flex-wrap: wrap;
   }
 }
 
@@ -499,7 +528,7 @@ p {
     width: 100vw;
     background-color: var(--color-verde-claro);
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 0;
   }
 
@@ -523,7 +552,7 @@ p {
 
   .menu-mobile.on .menu-toggle {
     position: relative;
-    z-index: 2;
+    z-index: 3;
   }
 
   .carrosel__sobre {
