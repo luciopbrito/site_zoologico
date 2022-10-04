@@ -5,11 +5,11 @@ $(document).on("click", ".menu-toggle", function () {
 
     if (menuative == true) {
         $(this).parent().attr("class", "menu-mobile off");
-        $(this).children().attr("src", "/src/assets/icons/list.svg");
+        $(this).children().attr("src", "./src/assets/icons/list.svg");
         $('html').css("overflow", "initial");
     } else {
         $(this).parent().attr("class", "menu-mobile on");
-        $(this).children().attr("src", "/src/assets/icons/x-lg.svg");
+        $(this).children().attr("src", "./src/assets/icons/x-lg.svg");
         $('html').css("overflow", "hidden");
     }
 });
