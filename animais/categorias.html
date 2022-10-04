@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../scripts/jquery/menu.js" defer></script>
     <title>Site Guarulhos</title>
 </head>
 
@@ -16,56 +17,51 @@
             <div class="header__logo">
                 <a href="../index.html"><img src="../src/assets/logo.png" alt="logo do zoo. Zoo Zoológico-SP"></a>
             </div>
-            <nav class="header__nav">
-                <ul>
-                    <li class="header-nav__link">
-                        <a href="../index.html">home</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="../sobre.html">sobre o zoo</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="#">animais</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="../como-chegar.html">como chegar</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="menu-mobile off">
+                <div class="menu-toggle">
+                    <img src="../src/assets/icons/list.svg" alt="">
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li class="header-nav__link">
+                            <a href="../index.html">home</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="../sobre.html">sobre o zoo</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="../animais/categorias.html">animais</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="../como-chegar.html">como chegar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="main">
         <div class="main__container">
             <section class="main__categoria">
-                <div class="main-categoria__row1 ">
-                    <a href="./aves.html" class="no_visual__a">
-                        <div id="main-categoria__aves">
-                            <picture>
-                                <source media="(min-width: )" srcset="../src/assets/categoria-aves.jpg">
-                                <img src="../src/assets/categoria-aves.jpg" alt="imagem de um cardeal, ele é uma ave!" title="Aves">
-                            </picture>
-                            <h2 class="main-categoria__title">aves</h2>
-                        </div>
-                    </a>
-                    <a href="./repteis.html" class="no_visual__a">
-                        <div id="main-categoria__repteis">
-                            <picture>
-                                <source media="(min-width: )" srcset="../src/assets/categoria-repteis.jpg">
-                                <img src="../src/assets/categoria-repteis.jpg" alt="imagem de um jacaré, ele é um réptil" title="Répteis">
-                            </picture>
-                            <h2 class="main-categoria__title">repteis</h2>
-                        </div>
-                    </a>
-                </div>
+                <a href="./aves.html" class="no_visual__a">
+                    <div class="main-categoria__animais">
+                        <img src="../src/assets/categoria-aves.jpg" alt="imagem de um cardeal, ele é uma ave!"
+                            title="Aves">
+                        <h2 class="main-categoria__title">aves</h2>
+                    </div>
+                </a>
+                <a href="./repteis.html" class="no_visual__a">
+                    <div class="main-categoria__animais">
+                        <img src="../src/assets/categoria-repteis.jpg" alt="imagem de um jacaré, ele é um réptil"
+                            title="Répteis">
+                        <h2 class="main-categoria__title">repteis</h2>
+                    </div>
+                </a>
                 <a href="./mamiferos.html" class="no_visual__a">
-                    <div class="main-categoria__row2">
-                        <div id="main-categoria__mamiferos">
-                            <picture>
-                                <source media="(min-width: )" srcset="../src/assets/categoria-mamiferos.jpg">
-                                <img src="../src/assets/categoria-mamiferos.jpg" alt="imagem de um bando de sericatos, eles são mámiferos" title="Mámiferos">
-                            </picture>
-                            <h2 class="main-categoria__title">mámiferos</h2>
-                        </div>
+                    <div class="main-categoria__animais">
+                        <img src="../src/assets/categoria-mamiferos.jpg"
+                            alt="imagem de um bando de sericatos, eles são mámiferos" title="Mámiferos">
+                        <h2 class="main-categoria__title">mámiferos</h2>
                     </div>
                 </a>
             </section>

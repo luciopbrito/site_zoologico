@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../scripts/jquery/menu.js" defer></script>
     <title>Site Guarulhos</title>
 </head>
 
@@ -16,122 +17,127 @@
             <div class="header__logo">
                 <a href="../index.html"><img src="../src/assets/logo.png" alt="logo do zoo. Zoo Zoológico-SP"></a>
             </div>
-            <nav class="header__nav">
-                <ul>
-                    <li class="header-nav__link">
-                        <a href="../index.html">home</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="../sobre.html">sobre o zoo</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="./categorias.html">animais</a>
-                    </li>
-                    <li class="header-nav__link">
-                        <a href="../como-chegar.html">como chegar</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="menu-mobile off">
+                <div class="menu-toggle">
+                    <img src="../src/assets/icons/list.svg" alt="">
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li class="header-nav__link">
+                            <a href="../index.html">home</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="../sobre.html">sobre o zoo</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="../animais/categorias.html">animais</a>
+                        </li>
+                        <li class="header-nav__link">
+                            <a href="../como-chegar.html">como chegar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="main">
         <div class="main__container">
             <h1 class="maintitle">Répteis</h1>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/tartaruga-de-orelha-vermelha-reptil.jpg">
-                        <img src="../src/assets/tartaruga-de-orelha-vermelha-reptil.jpg" alt="Imagem de uma Tartaruga de Orelha Vermelha sobre um galho em um lago" title="Tartaruga de Orelha Vermelha">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/tartaruga-de-orelha-vermelha-reptil.jpg"
+                        alt="Imagem de uma Tartaruga de Orelha Vermelha sobre um galho em um lago"
+                        title="Tartaruga de Orelha Vermelha">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Tartaruga de Orelha Vermelha (Trachemys s.elegans)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Tartaruga de Orelha Vermelha (Trachemys s.elegans)</h2>
                     <p>
-                        A tartaruga-de-ouvido-vermelho é a subespécie Trachemys scripta elegans, da ordem Testudinata, como é a chamada a ordem dos quelônios. É nativa dos Estados Unidos da América, mas hoje é encontrada em vários lugares do mundo, sendo ilegal como animal de estimação no Brasil, de acordo com o IBAMA.
+                        A tartaruga-de-ouvido-vermelho é a subespécie Trachemys scripta elegans, da ordem Testudinata,
+                        como é a chamada a ordem dos quelônios. É nativa dos Estados Unidos da América, mas hoje é
+                        encontrada em vários lugares do mundo, sendo ilegal como animal de estimação no Brasil, de
+                        acordo com o IBAMA.
                     </p>
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/jabuti-piranga-reptil.jpg">
-                        <img src="../src/assets/jabuti-piranga-reptil.jpg" alt="Imagem de um Jabuti Piranga sobre a grama" title="Jabuti Piranga">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/jabuti-piranga-reptil.jpg" alt="Imagem de um Jabuti Piranga sobre a grama"
+                        title="Jabuti Piranga">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Jabuti Piranga (Chelonoidis carbonaria)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Jabuti Piranga (Chelonoidis carbonaria)</h2>
                     <p>
-                        O jabuti-piranga é uma das duas espécies de jabuti conhecidas. Por ser a espécie mais comum dos jabutis, também é chamado abreviadamente como jabuti, jaboti, jabutim, jabuti-vermelho, em nas comunidades rurais do Alto Trombetas em Oriximiná, como curixá.
+                        O jabuti-piranga é uma das duas espécies de jabuti conhecidas. Por ser a espécie mais comum dos
+                        jabutis, também é chamado abreviadamente como jabuti, jaboti, jabutim, jabuti-vermelho, em nas
+                        comunidades rurais do Alto Trombetas em Oriximiná, como curixá.
                     </p>
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/iguana-reptil.jpg">
-                        <img src="../src/assets/iguana-reptil.jpg" alt="Imagem de um Iguana sobre uma pedra" title="Iguana">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/iguana-reptil.jpg" alt="Imagem de um Iguana sobre uma pedra" title="Iguana">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Iguana (Iguana iguana)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Iguana (Iguana iguana)</h2>
                     <p>
-                        Iguana-verde, popularmente conhecida como iguana-comum, iguano, sinimbu, "camaleão", cambaleão, senembi, senembu ou tijibu, é uma espécie de réptil da família Iguanidae. Ocorre na América Central, Caribe e América do Sul, abrangendo grande parte do Brasil.
+                        Iguana-verde, popularmente conhecida como iguana-comum, iguano, sinimbu, "camaleão", cambaleão,
+                        senembi, senembu ou tijibu, é uma espécie de réptil da família Iguanidae. Ocorre na América
+                        Central, Caribe e América do Sul, abrangendo grande parte do Brasil.
                     </p>
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/jacare-do-papo-amarelo-reptil.jpg">
-                        <img src="../src/assets/jacare-do-papo-amarelo-reptil.jpg" alt="Imagem de um Jacaré do Papo Amerelo próximo ao um lago" title="Jacaré do Papo Amerelo">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/jacare-do-papo-amarelo-reptil.jpg"
+                        alt="Imagem de um Jacaré do Papo Amerelo próximo ao um lago" title="Jacaré do Papo Amerelo">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Jacaré do Papo Amerelo (Caiman latirostris)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Jacaré do Papo Amerelo (Caiman latirostris)</h2>
                     <p>
-                        O jacaré-de-papo-amarelo (nome científico: Caiman latirostris) é um réptil crocodiliano da família Alligatoridae e gênero Caiman. É amplamente distribuído pelo sudeste da América do Sul, ocorrendo em qualquer ecossistema associado à água nas bacias dos rios Paraná, Paraguai, Uruguai e São Francisco, sendo comum desde o extremo leste do Brasil até o Uruguai.
+                        O jacaré-de-papo-amarelo (nome científico: Caiman latirostris) é um réptil crocodiliano da
+                        família Alligatoridae e gênero Caiman. É amplamente distribuído pelo sudeste da América do Sul,
+                        ocorrendo em qualquer ecossistema associado à água nas bacias dos rios Paraná, Paraguai, Uruguai
+                        e São Francisco, sendo comum desde o extremo leste do Brasil até o Uruguai.
                     </p>
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/teiu-argentino-reptil.jpg">
-                        <img src="../src/assets/teiu-argentino-reptil.jpg" alt="Imagem de um Teiú Argentino parado" title="Teiú Argentino">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/teiu-argentino-reptil.jpg" alt="Imagem de um Teiú Argentino parado"
+                        title="Teiú Argentino">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Teiú Argentino (Tupinambis rufescens)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Teiú Argentino (Tupinambis rufescens)</h2>
                     <p>
-                        O teiú-vermelho é um lagarto nativo do oeste da Argentina, Bolívia e Paraguai. É vendido em lojas de animais de estimação em todo o mundo por causa da sua natureza relativamente dócil e porque é relativamente fácil de manter
+                        O teiú-vermelho é um lagarto nativo do oeste da Argentina, Bolívia e Paraguai. É vendido em
+                        lojas de animais de estimação em todo o mundo por causa da sua natureza relativamente dócil e
+                        porque é relativamente fácil de manter
                     </p>
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/cagado-cabecudo-reptil.jpg">
-                        <img src="../src/assets/cagado-cabecudo-reptil.jpg" alt="Imagem de um Cágado Cabeçudo próximo ao um lago" title="Cágado Cabeçudo">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/cagado-cabecudo-reptil.jpg"
+                        alt="Imagem de um Cágado Cabeçudo próximo ao um lago" title="Cágado Cabeçudo">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Cágado Cabeçudo (Mesoclemmys tuberculatas)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Cágado Cabeçudo (Mesoclemmys tuberculatas)</h2>
                     <p>
                         Mesoclemmys tuberculata é uma espécie de tartaruga. É encontrada no nordeste do Brasil.
                     </p>
                 </div>
             </div>
             <div class="main-animal__tipo">
-                <div class="main-animail__img">
-                    <picture>
-                        <source media="(min-width: 700px)" srcset="../src/assets/tartaruga-mordedora-reptil.jpg">
-                        <img src="../src/assets/tartaruga-mordedora-reptil.jpg" alt="imagem de uma Tartaruga Mordedora parada sobre o chão" title="Tartaruga Mordedora">
-                    </picture>
+                <div class="main-animal__img">
+                    <img src="../src/assets/tartaruga-mordedora-reptil.jpg"
+                        alt="imagem de uma Tartaruga Mordedora parada sobre o chão" title="Tartaruga Mordedora">
                 </div>
-                <div class="main-animail__infoanimail">
-                    <h2 class="main-animail__title">Tartaruga Mordedora (Chelydra serpentina)</h2>
+                <div class="main-animal__infoanimal">
+                    <h2 class="main-animal__title">Tartaruga Mordedora (Chelydra serpentina)</h2>
                     <p>
-                        Tartaruga-mordedora é uma espécie de tartaruga de água doce da família Chelydridae. É a única espécie do gênero Chelydra e é da mesma família da Tartaruga-aligátor. A tartaruga-mordedora habita as Américas, desde o Canadá até o Equador.
+                        Tartaruga-mordedora é uma espécie de tartaruga de água doce da família Chelydridae. É a única
+                        espécie do gênero Chelydra e é da mesma família da Tartaruga-aligátor. A tartaruga-mordedora
+                        habita as Américas, desde o Canadá até o Equador.
                     </p>
                 </div>
             </div>
