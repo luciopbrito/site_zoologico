@@ -4,10 +4,12 @@ $(document).on("click", ".menu-toggle", function () {
     menuative = !menuative;
 
     if (menuative == true) {
-        $(this).attr("class", "menu-toggle on");
+        $(this).parent().attr("class", "menu-mobile off");
         $(this).children().attr("src", "/src/assets/icons/list.svg");
+        $('html').css("overflow", "initial");
     } else {
-        $(this).attr("class", "menu-toggle off");
+        $(this).parent().attr("class", "menu-mobile on");
         $(this).children().attr("src", "/src/assets/icons/x-lg.svg");
+        $('html').css("overflow", "hidden");
     }
 });
