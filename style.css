@@ -119,15 +119,38 @@ p {
   align-items: center;
   gap: 10rem;
   padding: 10rem 5rem;
+  height: 100%;
 }
 
 .main__categoria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows:  repeat(2, 1fr) ;
+  grid-template-areas: 
+  "cat1 cat2"
+  "cat3 cat3";
   gap: 2rem;
   width: 100%;
+}
+
+.cat1,
+.cat2,
+.cat3 {
+  display: flex;
+  justify-content: center;
+}
+
+.cat1 {
+  grid-area: cat1;
+}
+
+.cat2 {
+  grid-area: cat2;
+}
+
+.cat3 {
+  grid-area: cat3;
+  align-items: center;
 }
 
 .carrosel {
@@ -479,6 +502,14 @@ p {
 }
 
 @media screen and (max-width: 1000px) {
+  .main__categoria {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "cat1"
+    "cat2"
+    "cat3";
+  }
+
   .main-animal__img img {
     max-width: 100%;
   }
