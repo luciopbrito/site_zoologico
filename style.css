@@ -433,11 +433,10 @@ p {
 .main-animal__tipo {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   gap: 5rem;
 }
-
 .main-animal__img {
   /* width: 100%; */
   display: flex;
@@ -512,6 +511,10 @@ p {
 
   .main-animal__img img {
     max-width: 100%;
+  }
+  
+  .main-animal__img {
+    width: 100%;
   }
 
   .carrosel {
